@@ -1,7 +1,7 @@
 CREATE TABLE Ligue (
     ID_Ligue INT,
     nomLigue VARCHAR(100) NOT NULL,
-    ADD CONSTRAINT PK_Ligue PRIMARY KEY (ID_Ligue)
+    CONSTRAINT PK_Ligue PRIMARY KEY (ID_Ligue)
 )engine = innodb;
 
 CREATE TABLE Employe (
@@ -14,7 +14,7 @@ CREATE TABLE Employe (
     datedepart DATE,
     Admin BOOLEAN NOT NULL,
     ID_Ligue INT,
-    ADD CONSTRAINT PK_Employe PRIMARY KEY (ID_Employe)
+    CONSTRAINT PK_Employe PRIMARY KEY (ID_Employe)
 )engine = innodb;
 
 ALTER TABLE Employe
